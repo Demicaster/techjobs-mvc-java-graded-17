@@ -14,22 +14,22 @@
     <th:block th:each="job : ${jobs}">
       <table class="job-listing">
       <tr>
-        <td>ID: <span th:text="${job.Id}"></span></td>
+        <td th:text ="${job.Id}">"ID"</td>
       </tr>
       <tr>
-        <td>Name: <span th:text="${job.name}"></span></td>
+        <td th:text="${job.name}">"Name:"</td>
       </tr>
       <tr>
-        <td>Employer: <span th:text="${job.getEmployer()}"></span></td>
+        <td  th:text="${job.getEmployer()}">"Employer:"</td>
       </tr>
       <tr>
-        <td>Location: <span th:text="${job.getLocation()}"></span></td>
+        <td th:text="${job.getLocation()}">"Location:"</td>
       </tr>
       <tr>
-        <td>Position Type: <span th:text="${job.getPositionType()}"></span></td>
+        <td  th:text="${job.getPositionType()}">"Position Type:"</td>
       </tr>
       <tr>
-        <td>Core Competency: <span th:text="${job.getCoreCompetency()}"></span></td>
+        <td th:text="${job.getCoreCompetency()}">"Core Competency:"</td>
       </tr>
       </table>
     </th:block>
